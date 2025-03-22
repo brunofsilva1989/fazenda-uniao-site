@@ -1,0 +1,342 @@
+/* criando o stilo do site da fazenda união*/
+
+/* Resetando o css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Estilizando o header */
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilizando o banner */
+
+.banner {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.banner a {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.banner a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilizando o conteúdo */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.container .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .cards .card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: calc(33.333% - 20px);
+}
+
+.container .cards .card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.container .cards .card .content {
+    padding: 20px;
+}
+
+.container .cards .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.container .cards .card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.container .cards .card a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.container .cards .card a:hover {
+    background-color: #555;
+}
+
+/* Estilizando o footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #f5f5f5;
+}
+
+/* Estilizando o formulário */
+
+.form {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background-color: #555;
+}
+
+/* Estilizando o modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.modal .modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.modal .modal-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.modal .modal-content button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal .modal-content button:hover {
+    background-color: #555;
+}
+
+/* Estilizando o botão de fechar */
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Estilizando o botão de voltar ao topo */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+/* Estilizando o botão de voltar ao topo quando ele estiver escondido */
+
+.back-to-top.hidden {
+    display: none;
+}
+
+/* Estilizando o botão de voltar ao topo quando ele estiver visível */
+
+.back-to-top.visible {
+    display: block;
+}
+
+/* Estilizando o botão de voltar ao topo quando ele estiver fixo */
+
+.back-to-top.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Estilizando o botão de voltar ao topo quando ele estiver fixo e visível */
+
+.back-to-top.fixed.visible {
+    display: block;
+}
+
+/* Estilizando o botão de voltar ao topo quando ele estiver fixo e escondido */
+
+.back-to-top.fixed.hidden {
+    display: none;
+}
+
+/* Ajuste no tamanho do logo */
+
+.logo-site{
+    width: 200px;
+    margin-right: 150px;
+}
